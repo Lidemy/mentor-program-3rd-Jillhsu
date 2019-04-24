@@ -1,12 +1,14 @@
 function reverse(str) {
-    var ans = ''
-    for (var i = str.length - 1; i >= 0; i--)
-       ans += str[i]
-    console.log(ans)
+  let ans = '';
+  let i;
+  for (i = str.length - 1; i >= 0; i -= 1) {
+    ans += str[i];
+  }
+  console.log(ans);
   return ans;
 }
 
 reverse('hello');
-reverse('yoyoyo')
-reverse('1abc2')
-reverse('1,2,3,2,1')
+reverse('yoyoyo');
+reverse('1abc2');
+reverse('1,2,3,2,1');
