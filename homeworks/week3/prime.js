@@ -9,5 +9,5 @@ function isPrime(n) {
   }
   return true;
 }
-
-module.exports = isPrime;
+console.log(isPrime(1));
+console.log(isPrime(40));

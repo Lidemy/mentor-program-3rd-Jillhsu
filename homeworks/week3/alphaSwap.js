@@ -11,5 +11,5 @@ function alphaSwap(str) {
   }
   return ans;
 }
-
-module.exports = alphaSwap;
+console.log(alphaSwap('abcd'));
+console.log(alphaSwap('A1Lkk2'));
