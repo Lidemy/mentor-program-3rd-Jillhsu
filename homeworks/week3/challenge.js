@@ -38,7 +38,7 @@ function multi(str1, str2) {
       const addint = Number(str1[i]) * Number(str2[j]) + carry;
       carry = (addint - (addint % 10)) / 10;
       next = String(addint % 10) + next;
-      if (j === str2.length - 1 && carry > 0) next = String(carry) + next;
+      if (j === str2.length - 1 && carry) next = String(carry) + next;
     }
     if (i === str1.length - 1) base = next;
     for (let add0 = str1.length - 1 - i; add0 > 0; add0 -= 1) next = `${next}0`;
@@ -53,5 +53,4 @@ console.log(multi('11111111111111111111111', '1111111111111111111111111111111111
    console.log(multi('1111', '1111111111'));
    console.log(multi('3', '5'));
    console.log(multi('111111111111111111111111111111', '222222222222222222222222222222'));
-   console.log( '333333333333333333333333333333');
-   */
+*/
