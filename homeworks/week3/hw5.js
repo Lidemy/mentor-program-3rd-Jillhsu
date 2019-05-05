@@ -1,7 +1,7 @@
 function add(a, b) {
-  const add0 = Math.abs(str1.length - str2.length);
-  const first = (str1.length >= str2.length) ? str1 : str2;
-  let second = (str1.length >= str2.length) ? str2 : str1;
+  const add0 = Math.abs(a.length - b.length);
+  const first = (a.length >= b.length) ? a : b;
+  let second = (a.length >= b.length) ? b : a;
   let ans = '';
   if (add0) {
     for (let i = add0; i > 0; i -= 1) {
