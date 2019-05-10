@@ -20,6 +20,9 @@ describe('challenge', () => {
     expect(times('3092384098435095803945802943', '90385098234905890324859')).toBe('279505440517117020748362778586424553864063868260037');
   });
   it('should return correct answer when a=0 and b=10000', () => {
-    expect(times('0', '10000')).toBe('');
+    expect(times('0', '10000')).toBe('0');
+  });
+  it('should return correct answer when a=10000 and b=0', () => {
+    expect(times('10000', '0')).toBe('0');
   });
 });

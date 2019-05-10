@@ -21,7 +21,7 @@ function add(str1, str2) {
 }
 function multi(str1, str2) {
   let base = '';
-  if (str1 === '0' || str2 === '0') return '';
+  if (str1 === '0' || str2 === '0') return '0';
   for (let i = str1.length - 1; i >= 0; i -= 1) {
     let next = '';
     let carry = 0;
