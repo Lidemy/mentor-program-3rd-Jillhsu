@@ -21,6 +21,7 @@ function add(str1, str2) {
 }
 function multi(str1, str2) {
   let base = '';
+  if (str1 === '0' || str2 === '0') return '';
   for (let i = str1.length - 1; i >= 0; i -= 1) {
     let next = '';
     let carry = 0;
@@ -28,6 +29,7 @@ function multi(str1, str2) {
       const addint = Number(str1[i]) * Number(str2[j]) + carry;
       carry = (addint - (addint % 10)) / 10;
       next = String(addint % 10) + next;
+      if (j === 0 && carry) next = String(carry) + next;
     }
     if (i === str1.length - 1) base = next;
     for (let add0 = str1.length - 1 - i; add0 > 0; add0 -= 1) next = `${next}0`;

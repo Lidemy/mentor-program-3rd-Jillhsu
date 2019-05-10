@@ -16,7 +16,10 @@ describe('challenge', () => {
   it('should return correct answer when a=1 and b=1', () => {
     expect(times('12312383813881381381', '129018313819319831')).toBe('1588522998763262033482659100127466611');
   });
-  it('should return correct answer when a=1 and b=1', () => {
+  it('should return correct answer when a=2 and b=1', () => {
     expect(times('3092384098435095803945802943', '90385098234905890324859')).toBe('279505440517117020748362778586424553864063868260037');
+  });
+  it('should return correct answer when a=0 and b=10000', () => {
+    expect(times('0', '10000')).toBe('');
   });
 });
