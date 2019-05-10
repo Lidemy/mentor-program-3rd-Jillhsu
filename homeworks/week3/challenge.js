@@ -12,16 +12,6 @@ function add(str1, str2) {
   for (let i = first.length - 1; i >= 0; i -= 1) {
     const addint = Number(first[i]) + Number(second[i]) + carry;
     carry = (addint > 9) ? 1 : 0;
-    /*
-       addint = Number(first[i]) + Number(second[i]);
-       if (carry)
-       addint += 1;
-       if (addint >= 10) {
-       carry = true;
-       } else {
-       carry = false;
-       }
-       */
     ans = String(addint % 10) + ans;
   }
   if (carry) {
