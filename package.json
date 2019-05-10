@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./homeworks/**/*.js",
-    "tst": "jest"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
