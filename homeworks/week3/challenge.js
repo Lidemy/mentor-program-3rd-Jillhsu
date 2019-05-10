@@ -46,7 +46,7 @@ function multi(str1, str2) {
   }
   return base;
 }
-console.log(multi('11111111111111111111111', '1111111111111111111111111111111111111111111111111111111'));
+module.exports = multi;
 /*
    console.log(multi('123', '123'));
    console.log(multi('999999999999999999999999999', '1'));
