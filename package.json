@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./homeworks/**/*.js",
-    "tst": "jest"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/aszx87410/program-3rd#readme",
   "dependencies": {
-    "eslint": "^5.15.1"
+    "eslint": "^5.15.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "eslint": "^5.15.1",
