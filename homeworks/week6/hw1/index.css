@@ -1,0 +1,156 @@
+body {
+    margin: 0px;
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: cornflowerblue;
+}
+.nav__place {
+    
+}
+
+
+nav ~ div {
+    display: inline-block;
+}
+.Navbar {
+    display: inline-block;
+    color: aliceblue;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.nav__selections {
+    display: inline;
+    padding-left: 10px;
+    font-size: 25px;
+    color:aquamarine;
+}
+.nav__selections:hover {
+    color: antiquewhite;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.main__block {
+    margin-top: 55px;
+    background-color: azure;
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    padding: 30px;
+    width: 50%;
+    color: cadetblue;
+    margin: 0 auto;
+}
+.main__title {
+    font-size: 60px;
+    text-align: left;
+}
+.main__content {
+    font-size: 20px;
+    text-align: left;
+}
+.learnmore {
+    text-align: center;
+    border: 5px solid darkseagreen;
+    padding: 10px;
+    background-color: darkseagreen;
+    width: 200px;
+    color: cornsilk;
+    margin-top: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.learnmore:hover {
+    background-color: azure;
+    color: cadetblue;
+    border-radius: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.inner__bg {
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.inner__block {
+    margin: 0px auto;
+    display: inline-block;
+    padding: 25px;
+    width: 15%;
+    color: black;
+    
+}
+
+.inner__title {
+    font-size: 30px;
+    text-align: left;
+}
+
+.inner__content {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.details {
+    text-align: center;
+    border: 5px solid gray;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 15px;
+    width: 200px;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    box-sizing:  border-box;
+    
+}
+
+.details:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer{
+    border-top-color: #E3E3E3;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin-top: 3px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 750px){
+    .nav__place{
+        padding: 20px;
+    }
+    .main{  
+        padding: 30px;
+        padding-top: 50px;
+    }
+    .inner__block{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        margin:auto;
+        margin-top: 20px;
+    }
+}
