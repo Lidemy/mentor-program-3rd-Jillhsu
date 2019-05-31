@@ -3,20 +3,6 @@
 <hr /> 分隔線
 ex. ```<hr size="5" width="100" />```
 
-<bgsound /> src：音樂檔路徑
-ex. ```<bgsound src="img/music.mp3" loop="5" />```
-
-文字格式
-```<b>文字</b>```<b>文字</b> 粗體
-
-```<i>文字</i>```<i>文字</i> 斜線
-
-```<u>文字</u>```<u>文字</u> 底線
-
-```<sup>文字</sup>```<sup>文字</sup> 上標字
-
-```<sub>文字</sub>```<sub>文字</sub> 下標字
-
 
 ## 請問什麼是盒模型（box modal）
 
