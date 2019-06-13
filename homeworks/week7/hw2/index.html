@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>仿 google 表單</title>
+        <style>
+            * {
+                font-family: Roboto, sans-serif;
+            }
+            body {
+                margin: 0;
+                color: #0f0e0e;
+            }
+            .wrapper {
+                height: 100%;
+                width: 100%;
+                background-color: azure;
+            }
+            .bg__banner {
+                width: 100%;
+                height: 260px;
+                margin-top: 0px;
+                background: url("https://images.unsplash.com/photo-1558981420-c532902e58b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1477&q=80") no-repeat center;
+                background-position:  center 80%;
+                background-size: cover;
+            }
+            .bg__blank {
+                height: 100%;
+                width: 100%;
+            }
+            .form__frame{
+                max-width: 640px;
+                margin: auto;
+                top: -80px;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: white;
+                position: relative;
+                border-top: 10px solid #c2b96e;
+                box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+                padding-bottom: 15px;
+            }
+            .form__content {
+                
+                text-align: left;
+            }
+            .form__head {
+                padding-left: 34px;
+                padding-right: 34px;
+                padding-top: 34px;     
+            }
+            .title {
+                box-sizing: border-box;
+                font-size: 34px;
+                line-height: 135%;
+                max-width: 100%;
+                min-width: 0%;
+            }
+            .header__description {
+                
+                line-height: 135%;
+                margin-top: 22px;
+                font-size: 13px;
+            }
+            .star {
+                color: #d93025;
+                margin-top: 22px;
+                font-size: 13px;
+            }
+            .must {
+                color: #d93025;
+                font-size: 20px;
+            }
+            
+            input {
+                background-color: transparent;
+                line-height: 24px;
+                border: none;
+                
+                position: relative;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                height: 1.3rem;
+                top: 14px;
+                font-size: 16px;
+            }
+            .input__area {
+                margin-top: 5px;
+                height: 45px;
+                padding: .5em .5em .5em 0;
+            }
+            .short__ans {
+                width: 50%;
+            }
+            .long__ans {
+                width: 100%;
+            }
+            .form__body {
+                padding: 0px 17px;
+                word-break: break-word;
+            }
+            .form__list {
+                background-color: transparent;
+                padding: 16px 17px;
+                page-break-inside: avoid;
+                display: block;
+            }
+            .form__input {
+                font-size: 20px;
+                
+            }
+            
+            .comment {
+                font-size: 13px;
+                line-height: 135%;
+                width: 100%;
+            }
+            .no__comment {
+                margin-bottom: 5px;
+            }
+            .selections {
+                display: inline-flex;
+                margin: 10px 0;
+                
+            }
+            input[type=radio] {
+                border: 0px;
+                width: 10%;
+                
+                font-size: 20px;
+            }
+            .radio__button {
+               
+                
+                line-height: 135%;
+                margin: 0;
+                position: relative;
+                box-sizing: content-box;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .radio__content {
+                line-height: 135%;
+                
+                font-size: 17px;
+                justify-content: center;
+                margin-left: .75em;
+            }
+            #submit {
+                background: #155ded;
+                color: #f8f8f8;
+                width: 90px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                top: 0px;
+            }
+            #submit:hover {
+                cursor: pointer; 
+            }
+            
+            
+        
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="bg__banner"></div>
+            <div class="bg__blank"></div>
+            <div class="form__frame">
+                <div class="form__content">
+
+                    <div class="form__head">
+                            <div class="title">程式導師實驗計畫第三期報名表單</div>
+                            <div class="header__description">
+                                <p>詳情請參考：<a href="https://medium.com/hulis-blog/mentor-program-3rd-47a2e85e33b3">https://medium.com/hulis-blog/mentor-program-3rd-47a2e85e33b3</a></p>
+                                <p>填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
+                            </div>
+                            <p class="star">* Required</p>
+
+                    </div>
+                    <div class="form__body">
+                        <div class="form__list form__email">
+                            <div class="form__input no__comment">Email address <span class="must">*</span></div>
+                            <div class="input__area"><input class="short__ans" name="email" id="email" type="email" placeholder="Your email"></div>
+                            <!--
+                            <div class="alert">This is a required question</div>
+                            -->
+                        </div>
+                        <div class="form__list form__name">
+                            <div class="form__input">暱稱 <span class="must">*</span></div>
+                            <span class="comment">該如何稱呼你</span>
+                            <div class="input__area"><input class="short__ans" name="name" id="name" type="text" placeholder="Your answer"></div>
+                        </div>
+                        
+                        <div class="form__list form__input">
+                            <div class="assign__type">報名類型 <span class="must">*</span></div>
+                            
+                            <div class="selections">
+                                <input class="radio__button" name="type" id="type1" type="radio" value="type1">
+                                <div class="radio__content">
+                                    <label for="type1">從零到一基礎班（兩個月後開始收保證金 5000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）</label>
+                                </div>
+                            </div>
+                                
+                            <div class="selections">
+                                <input  class="radio__button" name="type" id="type2" type="radio" value="type2"> 
+                                <div class="radio__content">    
+                                    <label for="type2">在職工程師加強班（兩個月後開始收保證金 5000，三個月時收學費 35000 元台幣，被淘汰不退還）</label>
+                                </div>
+                            </div>
+                                
+                        </div>
+                        
+                        <div class="form__list form__coding">
+                            <div class="form__input">是否有程式相關背景？ <span class="must">*</span>
+                                <br>
+                                <span class="comment">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</span>
+                            </div>
+                            <div class="input__area"><input class="long__ans" name="coding" id="coding" type="text" placeholder="Your answer"></div>
+                            
+                        </div>
+                        <div class="form__list">
+                            <div class="form__input">其他
+                                <br>
+                                <span class="comment">任何你想講的</span>
+                            </div>
+                            <div class="input__area"><input class="long__ans" name="other" id="other" type="text" placeholder="Your answer"></div>
+                        </div>
+                        
+                        <div class="form__list">
+                            <input type="submit" name="submit" id="submit" />
+                        </div>
+                        
+                    
+                    
+                    
+                    
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    </body>
+    
+
+
+
+
+</html>

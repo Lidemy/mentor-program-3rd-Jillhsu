@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>week7 hw2</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: azure;
+        }
+
+        .platform {
+            margin: 0 auto;
+            width: 500px;
+            height: auto;
+            margin-top: 50px;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .box__ans {
+            border: 1px solid black;
+            width: 450px;
+            height: 75px;
+            background-color: aliceblue;
+            box-sizing: border-box;
+            padding: 10px;
+            
+            text-align: right;
+            
+ 
+        }
+        .result {
+            font-size: 50px;
+            
+        }
+
+        .btn-row {
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+
+        input {
+            font-size: 30px;
+            font-family: fantasy;
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            border-radius: 50px;
+        }
+        
+        input:hover {
+            background-color: rgba(243, 240, 255, 0.92);
+            cursor: pointer;
+        }
+
+        .zero {
+            width: 215px;
+        }
+        
+        .doubleHeight {
+            height: 215px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="platform">
+        <div class="content">
+            <div class="box__ans">
+                <div class="result">0</div>
+            </div>
+            <div class="box__num">
+                <div class="btn-row">
+
+
+
+                    <input type="button" class="ac" value="AC" onclick="AC()" />
+
+                    <input type="button" class="operator" value="÷" onclick="operateType(this.value)" />
+
+                </div>
+                <div class="btn-row">
+
+
+
+                    <input type="button" class="number" value="7" onclick="inputNum(this.value)" />
+
+                    <input type="button" class="number" value="8" onclick="inputNum(this.value)" />
+                    <input type="button" class="number" value="9" onclick="inputNum(this.value)" />
+                    <input type="button" class="operator" value="x" onclick="operateType(this.value)" />
+                </div>
+                <div class="btn-row">
+                    <input type="button" class="number" value="4" onclick="inputNum(this.value)" />
+                    <input type="button" class="number" value="5" onclick="inputNum(this.value)" />
+                    <input type="button" class="number" value="6" onclick="inputNum(this.value)" />
+                    <input type="button" class="operator" value="-" onclick="operateType(this.value)" />
+                </div>
+                <div class="btn-row">
+                    <input type="button" class="number" value="1" onclick="inputNum(this.value)" />
+                    <input type="button" class="number" value="2" onclick="inputNum(this.value)" />
+                    <input type="button" class="number" value="3" onclick="inputNum(this.value)" />
+                    <input type="button" class="operator" value="+" onclick="operateType(this.value)" />
+                </div>
+                <div class="btn-row">
+                    <input type="button" class="number zero" value="0" onclick="inputNum(this.value)" />
+                    <input type="button" class="operator" value="." onclick="inputNum(this.value)" />
+                    <input type="button" class="equal" value="=" onclick="outcome()" />
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        const result = document.querySelector('.result');
+        let firstNum = '';
+        let secondNum = '';
+        let operator = '';
+        let hasOperator = false;
+        
+        function outcome() {
+            switch(operator) {
+                case "+": {
+                    result.innerText = Number(firstNum) + Number(secondNum);
+                    break;
+                }
+                case '-': {
+                    result.innerText = Number(firstNum) - Number(secondNum);
+                    break;
+                }
+                case 'x': {
+                    result.innerText = Number(firstNum) * Number(secondNum);
+                    break;
+                }
+                case '÷': {
+                    result.innerText = Number(firstNum) / Number(secondNum);
+                    break;
+                }
+                default:
+                    break;
+            }
+        }
+        
+        function AC() {
+            result.innerText = '0';
+            firstNum = '';
+            secondNum = '';
+            operator = '';
+            hasOperator = false;
+            
+        }
+        
+        
+        function inputNum(num) {
+            // 檢查是否重複小數點
+            if(num === '.' && result.innerText.includes('.')) {
+                return;
+            }
+            
+            
+            if (hasOperator) { // secondNum
+                if (secondNum === '') {
+                    secondNum = num;
+                    result.innerText = secondNum;
+                } else {
+                
+                    secondNum += num;
+                    result.innerText += num;
+                }
+            } else { // firstNum
+                if (firstNum === '') {
+                    console.log(firstNum);
+                    firstNum = num;
+                    result.innerText = firstNum;
+                } else {
+                
+                    firstNum += num;
+                    result.innerText = firstNum;
+                }
+            }
+        }
+        
+        function operateType(value) {
+            operator = value;
+            hasOperator = true;
+        }
+    
+        
+    
+    
+    </script>
+
+
+</body>
+
+</html>
