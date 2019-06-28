@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="hw2.css">
+    <title>王媽媽留言板</title>
+</head>
+
+<body onkeydown="keyEnter();">
+    <div class="wrapper">
+        <div class="comment__board">
+            <h1>留言區（顯示最新２０則）</h1>
+            
+            <div class="comment__get">
+            </div>
+            <div class="page">
+                <input type="button" class="page" id="page__front" value="上一頁" onclick="warning();"/>
+                <div class="page" id="total__pages" >/</div>
+                <input type="button" class="page" id="page__back" value="下一頁" onclick="warning();"/>
+            </div>
+                
+            <div class="comment__write">   
+                <div><input type="text" class="comment__keyin" placeholder="leave a message" value=""></div>
+                <div class="comment__post" ><input class="button__submit" type="submit"></div>
+            </div>
+             
+        </div>
+        
+        
+            
+    
+    </div>
+    
+    <script src="hw2.js"></script>
+</body>
+    
+</html>

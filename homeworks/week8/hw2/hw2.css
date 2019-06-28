@@ -1,0 +1,160 @@
+* {
+    font-family: "Apple LiGothic Medium", "Microsoft JhengHei";
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    
+}
+
+.wrapper {
+    position: relative;
+}
+.comment__board {
+    max-width: 700px;
+    max-height: 80%;
+    padding: 15px 30px;
+    margin: auto;
+    
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.comment__get {
+    min-height: ;
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
+}
+
+.comment__each {
+    display: inline-block;
+    padding: 10px;
+    height: auto;
+    width: calc(100% - 22px);
+    text-align: left;
+    border-radius: 15px;
+    margin: 5px 0;
+    background-color: rgba(98, 109, 123, 0.74);
+    color: aliceblue;
+    box-shadow: 1px 1px 2px rgb(155, 155, 155);
+}
+
+.comment__number {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    
+    display: inline-block;
+    
+    background: rgb(219, 105, 105);
+    background-size: contain;
+    border-radius: 50px;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+    color: aliceblue;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    
+
+}
+/* 讓 content 垂直置中前面的數字  fail 
+.comment__content::before {
+    
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    content: "";
+}*/
+.comment__content {
+    word-break: break-all;
+    display: inline-block;
+    font-size: 18px;
+    
+    
+    vertical-align: middle;
+    height: auto;
+    width: calc(100% - 70px);
+    padding: 5px 0;
+    
+}
+.page {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    
+}
+
+input[type=button] {
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+::placeholder {
+  color: aliceblue;
+  opacity: 1; /* Firefox */
+}
+
+#total__pages::before {
+    margin-right: 5px;
+    content:  attr(data-page);
+}
+
+#total__pages::after {
+    margin-left: 5px;
+    content:  attr(data-value);
+}
+
+.comment__write {
+     margin: 0 auto;
+}
+
+.comment__keyin {
+    width: calc(100% - 16px);
+    height: 40px;
+    margin: 0 auto;
+    border-color: rgba(134, 134, 134, 0.74);
+    
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(88, 88, 88, 0.78) inset;
+    font-size: 18px;
+    background-color: rgb(155, 155, 155);
+    color: aliceblue;
+}
+
+
+
+.comment__post {
+    margin: 15px 0;
+    text-align: center;
+   
+}
+
+.button__submit {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(219, 105, 105);
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.button__submit:hover {
+    cursor: pointer;
+}
