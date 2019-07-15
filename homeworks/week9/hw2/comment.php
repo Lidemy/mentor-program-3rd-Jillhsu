@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="container">
+        <h1>「本站為練習用網站，因教學用途刻意忽略資安的實作，註冊時請勿使用任何真實的帳號或密碼」</h1>
         <h1>留言版</h1>
         
         <div class="comment__input">
