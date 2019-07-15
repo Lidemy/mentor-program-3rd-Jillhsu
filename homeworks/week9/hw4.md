@@ -8,7 +8,7 @@ VARCHAR 要設定初始值，決定預設的資料型態容納大小，範圍為
 
 ## Cookie 是什麼？在 HTTP 這一層要怎麼設定 Cookie，瀏覽器又會以什麼形式帶去 Server？
 
-Cookie 是可以讓瀏覽器儲存資料的地方，
+Cookie 是可以讓瀏覽器儲存資料的地方，Server 端可能給 Browser 端一個或多個 Set-Cookies 的 HTTP Header，Browser 收到後　Set-Cookie 指令時，會儲存在Browser 的 Cookie 存放區，並記錄該 Cookie 隸屬的網域、網址路徑、過期時間、是否為安全連線，當 Browser 再次發出 HTTP Request 指令到 Server 時，就會再比對目前在 Browser 內的 Cookie 存放區有沒有「該網域」、「該目錄」、「過期時間尚未過期」且「是否為安全連線」的 Cookie，如果有的話就會包含在 HTTP Request 指令的 "Cookie" Header 中。 
 
 
 ## 我們本週實作的會員系統，你能夠想到什麼潛在的問題嗎？
