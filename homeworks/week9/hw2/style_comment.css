@@ -1,0 +1,123 @@
+* {
+    font-size: 20px;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.comment__input {
+    width: 500px;
+    padding: 10px;
+    background-color: azure;
+    margin: 0 auto;
+}
+
+.comment__input>h2{
+    text-align: left;
+    margin-left: 40px;
+}
+
+
+form {
+}
+
+form>div {
+    margin-top: 10px;
+    
+}
+
+input[name="name"] {
+    width: 300px;
+}
+
+input[type="submit"] {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px 30px;
+    background-color: #88b7d5;
+    color: aliceblue;
+}
+
+input[type="submit"]:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+div>textarea {
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.comments {
+    
+}
+
+.comment {
+    margin: 0 auto;
+    background-color: azure;
+    padding: 10px;
+    width: 500px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.comment~.comment {
+}
+
+
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    position: flex;
+    
+}
+.comment__name {
+    margin: 0;
+    padding: 20px;
+    
+}
+
+.comment__content {
+    
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+.comment__time::before {
+    margin-left: 20px;
+    content: "留言時間：";
+}
+
+.comment__time {
+    margin: 10px 0px;
+    font-size: 16px;
+    color: cadetblue;
+    
+}
+
+.go {
+    margin: 10px;
+}

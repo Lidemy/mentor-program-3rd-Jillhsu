@@ -1,0 +1,36 @@
+* {
+
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    border: 1px solid grey;
+}
+
+input {
+    padding: 5px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+input[type="submit"] {
+    
+}
+
+
+a[href$='.php'] {
+    font-size: 25px;
+    color: blue;
+    transform: translateY(20px;)
+}
+
+.go {
+    margin: 10px;
+}
+
+
