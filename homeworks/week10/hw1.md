@@ -13,9 +13,13 @@
 總之，每天都有感受到自己的成長與進步真的很棒XD 
 
 解題心得：
+
 每一個遊戲都卡關了...好挫折
+
 r30 到 lv4，{tRaNspar3nT}居然不是 token，那甚麼才是 QQ 試著用 transparent 居然也不是。
-綜合能力測驗破到"提示 #5 : 別忘了遺漏的變數"，咦？我到底漏了什麼變數...
-我還有玩 Lidemy HTTP Challenge，一樣卡住XD，卡在新增書籍，試著發送 request 到圖書館資訊系統，回傳的訊息是 No 'Access-Control-Allow-Origin' header is present on the requested resource，難道我漏了甚麼重要資訊嗎...
+
+綜合能力測驗破到"提示 #5 : 別忘了遺漏的變數"，咦？我到底漏了什麼變數...。
+
+我還有玩 Lidemy HTTP Challenge，一樣卡住XD，卡在新增書籍，試著發送 request 到圖書館資訊系統，回傳的訊息是 No 'Access-Control-Allow-Origin' header is present on the requested resource，難道我漏了甚麼重要資訊嗎...。
 
 決定還是先推主線，這些遊戲暫時擱著，交給未來的我煩惱ˊˇˋ
